@@ -1,3 +1,5 @@
+<div align="center">
+
 # 🚤**ScoreLiDAR**🚤
 ## Distilling Diffusion Models to Efficient 3D LiDAR Scene Completion
 
@@ -5,7 +7,9 @@
 
 ![](./pics/teaser2.png)
 
-### Abstract
+</div>
+
+## **Abstract**
 
 Diffusion models have been applied to 3D LiDAR scene completion due to their strong training stability and high completion quality.
 However, the slow sampling speed limits the practical application of diffusion-based scene completion models since autonomous vehicles require an efficient perception of surrounding environments. 
@@ -16,7 +20,7 @@ To improve completion quality, we also introduce a novel **Structural Loss**, wh
 The loss contains a scene-wise term constraining the holistic structure and a point-wise term constraining the key landmark points and their relative configuration.
 Extensive experiments demonstrate that ScoreLiDAR significantly accelerates the completion time from 30.55 to 5.37 seconds per frame ( $>$ 5 $\times$ ) on SemanticKITTI and achieves superior performance compared to state-of-the-art 3D LiDAR scene completion models.
 
-### Environment setup
+## **Environment setup**
 
 Following commands are tested with python 3.8 and CUDA 11.1.
 
@@ -34,7 +38,7 @@ Setup the code on the code main directory:
 
 `pip3 install -U -e .`
 
-### Inference
+## **Inference**
 
 First, downoad the models 'ScoreLiDAR_diff_net.ckpt' and 'refine_net.ckpt' from [here](https://drive.google.com/drive/folders/1f5c3BuD88TiOEuVhMq09wTQUMKwjO5lQ?usp=drive_link) and place it in the following directory: 
 
@@ -50,7 +54,7 @@ You can visualize the result with the following command:
 
 `python3 vis_pcd.py -p <path_to_.ply_file>`
 
-### Training
+## **Training**
 
 We used The SemanticKITTI dataset for training.
 
@@ -91,7 +95,7 @@ For training the model, the configurations are defined in `config/config.yaml`, 
 
 `python3 train.py`
 
-### Citation
+## **Citation**
 
 If you find our paper useful or relevant to your research, please kindly cite our papers:
 
@@ -99,7 +103,7 @@ If you find our paper useful or relevant to your research, please kindly cite ou
 TODO
 ```
 
-### Credits
+## **Credits**
 
 ScoreLiDAR is highly built on the following amazing open-source projects:
 
