@@ -1,9 +1,11 @@
 <div align="center">
 
-# 🚤**ScoreLiDAR**🚤
-## Distilling Diffusion Models to Efficient 3D LiDAR Scene Completion
+# 🔥**ScoreLiDAR**🔥
+## **[Distilling Diffusion Models to Efficient 3D LiDAR Scene Completion]()**
 
-**[Paper]()** **|** **[Sup. material]()**
+by *[Shengyuan Zhang](https://github.com/SYZhang0805)<sup>1</sup>, An Zhao<sup>1</sup>, [Ling Yang](https://github.com/YangLing0818)<sup>2</sup>, [Zejian Li*](https://zejianli.github.io/)<sup>1</sup>, Chenye Meng<sup>1</sup>, Haoran Xu<sup>3</sup>, Tianrun Chen<sup>1</sup>, AnYang Wei<sup>3</sup>,Perry Pengyun GU<sup>3</sup>, [Lingyun Sun](https://person.zju.edu.cn/sly)<sup>1</sup>*
+
+*<sup>1</sup>Zhejiang University <sup>2</sup>Peking University <sup>3</sup>Geely Group*
 
 ![](./pics/teaser2.png)
 
@@ -13,7 +15,6 @@
 
 Diffusion models have been applied to 3D LiDAR scene completion due to their strong training stability and high completion quality.
 However, the slow sampling speed limits the practical application of diffusion-based scene completion models since autonomous vehicles require an efficient perception of surrounding environments. 
-
 This paper proposes a novel distillation method tailored for 3D LiDAR scene completion models, dubbed **ScoreLiDAR**, which achieves efficient yet high-quality scene completion.
 ScoreLiDAR enables the distilled model to sample in significantly fewer steps after distillation.
 To improve completion quality, we also introduce a novel **Structural Loss**, which encourages the distilled model to capture the geometric structure of the 3D LiDAR scene.
@@ -22,7 +23,7 @@ Extensive experiments demonstrate that ScoreLiDAR significantly accelerates the 
 
 ## **Environment setup**
 
-Following commands are tested with python 3.8 and CUDA 11.1.
+The following commands are tested with Python 3.8 and CUDA 11.1.
 
 Install required packages:
 
@@ -30,7 +31,7 @@ Install required packages:
 
 `pip3 install -r requirements.txt`
 
-Install MinkowskiEngine for sparse tensor processing:
+Install [MinkowskiEngine](https://github.com/NVIDIA/MinkowskiEngine) for sparse tensor processing:
 
 `pip3 install -U MinkowskiEngine==0.5.4 --install-option="--blas=openblas" -v --no-deps`
 
@@ -58,7 +59,7 @@ You can visualize the result with the following command:
 
 We used The SemanticKITTI dataset for training.
 
-The SemanticKITTI dataset has to be download from the official [site](http://www.semantic-kitti.org/dataset.html#download) and extracted in the following structure:
+The SemanticKITTI dataset has to be downloaded from the official [site](http://www.semantic-kitti.org/dataset.html#download) and extracted in the following structure:
 
 ```
 ./lidiff/
@@ -87,7 +88,7 @@ Ground truth scenes are not provided explicitly in SemanticKITTI. To generate th
 python3 map_from_scans.py --path Datasets/SemanticKITTI/dataset/sequences/
 ```
 
-What's more, the teacher model is necessary for distilation process. We used the pre-trained model from [Lidiff](https://github.com/PRBonn/LiDiff). Download the teacher model weights 'diff_net.ckpt' from [here]() and place it at `checkpoints/diff_net.ckpt`.
+We used the pre-trained model of LiDiff. Download the teacher model weights 'diff_net.ckpt' from [here](https://drive.google.com/drive/folders/1f5c3BuD88TiOEuVhMq09wTQUMKwjO5lQ?usp=drive_link) or the official release of [LiDiff](https://github.com/PRBonn/LiDiff) and place it at `checkpoints/diff_net.ckpt`.
 
 Once the sequences map is generated and the teacher model is ready you can then train the model.
 
