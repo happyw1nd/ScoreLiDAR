@@ -61,7 +61,7 @@ We used The SemanticKITTI dataset for training.
 The SemanticKITTI dataset has to be download from the official [site](http://www.semantic-kitti.org/dataset.html#download) and extracted in the following structure:
 
 ```
-./lidiff/
+./scorelidar/
 └── Datasets/
     └── SemanticKITTI
         └── dataset
