@@ -1,2 +1,3 @@
 scorelidar/checkpoints/*
 **/__pycache__/
+*.egg-info/
