@@ -5,7 +5,7 @@
 
 by *[Shengyuan Zhang](https://github.com/SYZhang0805)<sup>1</sup>, An Zhao<sup>1</sup>, [Ling Yang](https://github.com/YangLing0818)<sup>2</sup>, [Zejian Li*](https://zejianli.github.io/)<sup>1</sup>, Chenye Meng<sup>1</sup>, Haoran Xu<sup>3</sup>, Tianrun Chen<sup>1</sup>, AnYang Wei<sup>3</sup>,Perry Pengyun GU<sup>3</sup>, [Lingyun Sun](https://person.zju.edu.cn/sly)<sup>1</sup>*
 
-*<sup>1</sup>Zhejiang University <sup>2</sup>Peking University <sup>3</sup>Geely Group*
+*<sup>1</sup>Zhejiang University <sup>2</sup>Peking University <sup>3</sup>Zhejiang Green Zhixing Technology co., ltd*
 
 ![](./pics/teaser2.png)
 
