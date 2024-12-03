@@ -59,7 +59,7 @@ You can visualize the result with the following command:
 
 We used The SemanticKITTI dataset for training.
 
-The SemanticKITTI dataset has to be downloaded from the official [site](http://www.semantic-kitti.org/dataset.html#download) and extracted in the following structure:
+The SemanticKITTI dataset has to be downloaded from the [official site](http://www.semantic-kitti.org/dataset.html#download) and extracted in the following structure:
 
 ```
 ./lidiff/
