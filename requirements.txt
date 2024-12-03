@@ -9,4 +9,4 @@ natsort==8.1.0
 pykeops==2.1.2
 diffusers==0.18.0
 hdbscan==0.8.40
-pytorch3d = 0.3.0
+pytorch3d==0.3.0
