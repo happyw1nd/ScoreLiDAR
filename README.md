@@ -1,7 +1,7 @@
 <div align="center">
 
 # 🔥**ScoreLiDAR**🔥
-## **[Distilling Diffusion Models to Efficient 3D LiDAR Scene Completion]()**
+## **[Distilling Diffusion Models to Efficient 3D LiDAR Scene Completion](https://arxiv.org/abs/2412.03515)**
 
 by *[Shengyuan Zhang](https://github.com/SYZhang0805)<sup>1</sup>, An Zhao<sup>1</sup>, [Ling Yang](https://github.com/YangLing0818)<sup>2</sup>, [Zejian Li*](https://zejianli.github.io/)<sup>1</sup>, Chenye Meng<sup>1</sup>, Haoran Xu<sup>3</sup>, Tianrun Chen<sup>1</sup>, AnYang Wei<sup>3</sup>,Perry Pengyun GU<sup>3</sup>, [Lingyun Sun](https://person.zju.edu.cn/sly)<sup>1</sup>*
 
@@ -101,7 +101,12 @@ For training the model, the configurations are defined in `config/config.yaml`, 
 If you find our paper useful or relevant to your research, please kindly cite our papers:
 
 ```bibtex
-TODO
+@article{zhang2024distillingdiffusionmodels,
+    title={Distilling Diffusion Models to Efficient 3D LiDAR Scene Completion}, 
+    author={Shengyuan Zhang and An Zhao and Ling Yang and Zejian Li and Chenye Meng and Haoran Xu and Tianrun Chen and AnYang Wei and Perry Pengyun GU and Lingyun Sun,
+    journal={arXiv:2412.03515},
+    year={2024}
+}
 ```
 
 ## **Credits**
