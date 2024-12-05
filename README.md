@@ -41,7 +41,7 @@ Setup the code on the code main directory:
 
 ## **Inference**
 
-First, downoad the models 'ScoreLiDAR_diff_net.ckpt' and 'refine_net.ckpt' from [here](https://drive.google.com/drive/folders/1f5c3BuD88TiOEuVhMq09wTQUMKwjO5lQ?usp=drive_link) and place it in the following directory: 
+First, download the models 'ScoreLiDAR_diff_net.ckpt' and 'refine_net.ckpt' from [here](https://drive.google.com/drive/folders/1f5c3BuD88TiOEuVhMq09wTQUMKwjO5lQ?usp=drive_link) and place it in the following directory: 
 
 `checkpoints/*.ckpt`
 
