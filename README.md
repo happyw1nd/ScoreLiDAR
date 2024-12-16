@@ -45,6 +45,13 @@ First, download the models 'ScoreLiDAR_diff_net.ckpt' and 'refine_net.ckpt' from
 
 `checkpoints/*.ckpt`
 
+Or you can download it from our huggingface repo with: 
+
+```
+huggingface-cli download happywind/ScoreLiDAR ScoreLiDAR_diff_net.ckpt --local-dir checkpoints
+huggingface-cli download happywind/ScoreLiDAR refine_net.ckpt --local-dir checkpoints
+```
+
 Then run the inference script with the following command:
 
 `python3 tools/diff_completion_pipeline.py --denoising_steps 8 --cond_weight 3.5` 
@@ -89,6 +96,10 @@ python3 map_from_scans.py --path Datasets/SemanticKITTI/dataset/sequences/
 ```
 
 We used the pre-trained model of LiDiff. Download the teacher model weights 'diff_net.ckpt' from [here](https://drive.google.com/drive/folders/1f5c3BuD88TiOEuVhMq09wTQUMKwjO5lQ?usp=drive_link) or the official release of [LiDiff](https://github.com/PRBonn/LiDiff) and place it at `checkpoints/diff_net.ckpt`.
+
+Or you can download it from our huggingface repo with: 
+
+`huggingface-cli download happywind/ScoreLiDAR diff_net.ckpt --local-dir checkpoints`
 
 Once the sequences map is generated and the teacher model is ready you can then train the model.
 
