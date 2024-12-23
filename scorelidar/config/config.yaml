@@ -3,7 +3,7 @@ experiment:
 
 ##Data
 data:
-    data_dir: '/root/autodl-tmp/SemanticKITTI'
+    data_dir: '.\Datasets\SemanticKITTI'
     resolution: 0.05
     dataloader: 'KITTI'
     split: 'train'
