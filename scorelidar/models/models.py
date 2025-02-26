@@ -352,7 +352,7 @@ class ScoreLiDAR(LightningModule):
                 self.generator.eval()
                 t_sample = batch['pcd_part'].repeat(1,10,1) + torch.randn(batch['pcd_part'].repeat(1,10,1).shape, device=self.device)
                 x_full = self.points_to_tensor(t_sample, batch['mean'], batch['std']) # to be denoised by Generator
-                generated_sample = self.p_sample_one_step(t_sample, x_full, x_part, batch['mean'], batch['std'])
+                generated_sample = self.p_sample_one_step(batch['pcd_part'].repeat(1,10,1), x_full, x_part, batch['mean'], batch['std'])
                 generated_sample = generated_sample.F.reshape(t_sample.shape[0],-1,3)
 
             # add noise to generated samples
@@ -390,7 +390,7 @@ class ScoreLiDAR(LightningModule):
             self.generator.train()
             t_sample = batch['pcd_part'].repeat(1,10,1) + torch.randn(batch['pcd_part'].repeat(1,10,1).shape, device=self.device)
             x_full = self.points_to_tensor(t_sample, batch['mean'], batch['std'])
-            generated_sample = self.p_sample_one_step(t_sample, x_full, x_part, batch['mean'], batch['std']) # TensorField
+            generated_sample = self.p_sample_one_step(batch['pcd_part'].repeat(1,10,1), x_full, x_part, batch['mean'], batch['std']) # TensorField
             generated_sample = generated_sample.F.reshape(t_sample.shape[0],-1,3) # Tensor
 
             # add noise to generated samples
