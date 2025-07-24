@@ -1,7 +1,7 @@
 <div align="center">
 
 # 🔥**ScoreLiDAR**🔥
-## **[Distilling Diffusion Models to Efficient 3D LiDAR Scene Completion](https://arxiv.org/abs/2412.03515)**
+## **[[ICCV'25 Oral] Distilling Diffusion Models to Efficient 3D LiDAR Scene Completion](https://arxiv.org/abs/2412.03515)**
 
 by *[Shengyuan Zhang](https://github.com/SYZhang0805)<sup>1</sup>, An Zhao<sup>1</sup>, [Ling Yang](https://github.com/YangLing0818)<sup>2</sup>, [Zejian Li*](https://zejianli.github.io/)<sup>1</sup>, Chenye Meng<sup>1</sup>, Haoran Xu<sup>3</sup>, Tianrun Chen<sup>1</sup>, AnYang Wei<sup>3</sup>,Perry Pengyun GU<sup>3</sup>, [Lingyun Sun](https://person.zju.edu.cn/sly)<sup>1</sup>*
 
